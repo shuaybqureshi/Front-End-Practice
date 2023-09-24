@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form>
+      <label>Username</label>
+      <input 
+      type="text"
+      id="username-input"
+      name="username"
+      minlength="4"
+      pattern="^[a-zA-Z0-9]+$" 
+      required
+       />
+       <label>Email</label>
+       <input 
+       type="email"
+       id="email-input"
+       name="email"
+       required
+        />
+        <label>Password</label>
+        <input 
+        type="password"
+        id="password-input"
+        name="password"
+        minlength="6"
+        required
+         />
+         <label>Confirm Password</label>
+         <input 
+         id="password-confirm-input"
+         name="password_confirm"
+         name="password"
+         minlength="6"
+         required
+         aria-describedby="password-mismatch-error"
+          />
+          <div
+          class="error hidden"
+          id="password-mismatch-error">
+          The passwords do not match
+        </div>
+
+      <div>
+       <button type="submit">Submit</button>
+     </div>
+  </form>
+    <script src="index.js"></script>
+  </body>
+</html>
