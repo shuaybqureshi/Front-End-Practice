@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  display: flex; /* Use flexbox to center content */
+  justify-content: center; /* Horizontally center content */
+  font-size: 30px;
+}
+
+.container{
+  /* justify-content:center; */
+  display: flex;
+  border: 4px solid grey;
+  border-radius: 5px;
+  background-color: #333333;
+
+  /* gap: 5px; */
+}
+
+span {
+  /* flex: 0 0 auto; This ensures the div takes only the space it needs */
+  /* background-color: lightblue; */
+  margin: 5px;
+  padding: 10px;
+  color: white;
+  /* border: 1px solid #ddd; */
+}
+
+
+
+
+
