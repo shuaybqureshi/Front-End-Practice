@@ -1,0 +1,92 @@
+.body{
+  font-family: sans-serif;
+}
+.body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.beta-request{
+  max-width: 500px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+.header{
+  background-color: #44bfa3;
+  border-radius: 5px;
+  margin: 0px;
+  padding: 10px;
+  color: #ffffff;
+ font-size: 20px;
+font-size: "sans-serif";
+text-align: center;
+}
+.title{
+  margin: 0px 0px 2px 0px;
+  font-size:20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  /* padding: 5px; */
+}
+.subtitle{
+  font-size: 14px;
+  font-family: sans-serif;
+
+}
+input{
+  font-family: sans-serif;
+  margin: 10px;  
+  height: 30px;
+  min-width: 40px;
+  max-width: 60%;
+  background-color: #f5f6f7;
+  color: #999999;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+  padding-left: 5px; /* 5px distance between placeholder and left side */
+  box-sizing: border-box; /* Ensure width includes padding and border */
+}
+input::placeholder {
+  color: #999999;
+}
+.button{
+  height: 43px;
+  font-size: 14px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-family: sans-serif;
+  text-transform: uppercase; /* Convert text to uppercase */
+  font-weight: bold; /* Make text bold */
+  display: block; /* Allows centering horizontally */
+  margin: 0 auto ; /* Center horizontally */
+  
+}
+.contact-info{
+  margin-bottom:18px ;
+}
+.email,.phone{
+margin-bottom: 0px;
+}
+.group {
+  display: flex;
+  justify-content: space-between; /* Adjust as needed for desktop layout */
+}
+
+/* Media query for screens with a maximum width of 768 pixels (typical for mobile devices) */
+@media (max-width: 400px) {
+  .feild{
+    width: 100% ;
+  }
+  .group {
+    display: block;
+    width: 100%;
+  }
+  input{
+    width: 80% ;
+    max-width: 60%;
+
+  }
+
+}

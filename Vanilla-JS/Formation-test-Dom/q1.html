@@ -1,0 +1,16 @@
+<div class="markdown -arial"><p>What is the issue with this code, if we expect the value of</p>
+    <pre><code class="language-javascript"><span class="hljs-title function_">sum</span>(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span>, <span class="hljs-string">"a"</span>, <span class="hljs-title class_">NaN</span>)
+    </code></pre>
+    <p>to be equal to 15?</p>
+    <pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">sum</span>(<span class="hljs-params"></span>) {
+      <span class="hljs-keyword">let</span> answer = <span class="hljs-number">0</span>;
+      <span class="hljs-variable language_">arguments</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">element</span>) =&gt;</span> {
+        <span class="hljs-keyword">const</span> e = <span class="hljs-built_in">parseInt</span>(element);
+        <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">isNaN</span>(e)) {
+          answer += e;
+        }
+      });
+      <span class="hljs-keyword">return</span> answer;
+    }
+    </code></pre>
+    </div>

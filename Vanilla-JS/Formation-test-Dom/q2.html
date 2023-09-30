@@ -1,0 +1,33 @@
+<div class="markdown -arial"><p>With the following code, which of the given options will run without an error?</p>
+    <pre><code class="language-javascript"><span class="hljs-keyword">function</span> <span class="hljs-title function_">sayHi</span>(<span class="hljs-params">fullName, callback</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Hi, <span class="hljs-subst">${fullName}</span>!`</span>);
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> callback === <span class="hljs-string">'function'</span>) {
+        <span class="hljs-title function_">callback</span>();
+      }
+    }
+    
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">sayBye</span>(<span class="hljs-params">fullName, callback</span>) {
+      <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">`Bye, <span class="hljs-subst">${fullName}</span>!`</span>);
+      <span class="hljs-title function_">callback</span>();
+    }
+    
+    <span class="hljs-keyword">function</span> <span class="hljs-title function_">printMessage</span>(<span class="hljs-params">firstName, lastName, callback</span>) {
+      <span class="hljs-keyword">const</span> fullName = <span class="hljs-string">`<span class="hljs-subst">${firstName}</span> <span class="hljs-subst">${lastName}</span>`</span>;
+      <span class="hljs-keyword">if</span> (<span class="hljs-keyword">typeof</span> callback === <span class="hljs-string">'function'</span>) {
+        <span class="hljs-title function_">callback</span>(fullName);
+      }
+    }
+    </code></pre>
+    </div>
+
+<div>Answers</div>
+<div class="quiz-task-options -space-v-16"><div class="quiz-task-options--option -scroll -bg-white -position-relative" aria-disabled="false" aria-checked="false" tabindex="0" role="checkbox"><div class="-layout-h -justify -center"><div class="-layout-h -space-h-16 -center"><div class="icon -size-20 -type-success"><div class="-layout-h -center"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm14 16V5H5v14h14z"></path></svg></div></div><div class="markdown"><pre><code class="language-javascript"><span class="hljs-title function_">printMessage</span>(<span class="hljs-string">'Mark'</span>, <span class="hljs-string">'Newman'</span>, sayBye);
+</code></pre>
+</div></div></div></div><div class="quiz-task-options--option -scroll -bg-white -position-relative" aria-disabled="false" aria-checked="false" tabindex="0" role="checkbox"><div class="-layout-h -justify -center"><div class="-layout-h -space-h-16 -center"><div class="icon -size-20 -type-success"><div class="-layout-h -center"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm14 16V5H5v14h14z"></path></svg></div></div><div class="markdown"><pre><code class="language-javascript"><span class="hljs-title function_">printMessage</span>(<span class="hljs-string">'Andrew'</span>, <span class="hljs-string">'Johnson'</span>, sayHi);
+</code></pre>
+</div></div></div></div><div class="quiz-task-options--option -scroll -bg-white -position-relative" aria-disabled="false" aria-checked="false" tabindex="0" role="checkbox"><div class="-layout-h -justify -center"><div class="-layout-h -space-h-16 -center"><div class="icon -size-20 -type-success"><div class="-layout-h -center"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm14 16V5H5v14h14z"></path></svg></div></div><div class="markdown"><pre><code class="language-javascript"><span class="hljs-title function_">printMessage</span>(<span class="hljs-string">'John'</span>, <span class="hljs-string">'Doe'</span>, <span class="hljs-function"><span class="hljs-params">x</span> =&gt;</span> <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(x));
+</code></pre>
+</div></div></div></div><div class="quiz-task-options--option -scroll -bg-white -position-relative" aria-disabled="false" aria-checked="false" tabindex="0" role="checkbox"><div class="-layout-h -justify -center"><div class="-layout-h -space-h-16 -center"><div class="icon -size-20 -type-success"><div class="-layout-h -center"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm14 16V5H5v14h14z"></path></svg></div></div><div class="markdown"><pre><code class="language-javascript"><span class="hljs-title function_">printMessage</span>(<span class="hljs-string">'Jon'</span>, <span class="hljs-string">'Snow'</span>, sayYouKnowNothing);
+</code></pre>
+</div></div></div></div><div class="quiz-task-options--option -scroll -bg-white -position-relative" aria-disabled="false" aria-checked="false" tabindex="0" role="checkbox"><div class="-layout-h -justify -center"><div class="-layout-h -space-h-16 -center"><div class="icon -size-20 -type-success"><div class="-layout-h -center"><svg width="24" height="24" viewBox="0 0 24 24"><path d="M5 3h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2V5c0-1.1.9-2 2-2zm14 16V5H5v14h14z"></path></svg></div></div><div class="markdown"><p>None of the above</p>
+</div></div></div></div></div>
